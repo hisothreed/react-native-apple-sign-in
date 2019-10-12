@@ -93,6 +93,11 @@ RCT_EXPORT_METHOD(requestAsync:(NSDictionary *)options
     NSLog(@" Error code%@", error);
   _promiseReject(@"authorization", error.description, error);
 }
+//RCT_EXPORT_METHOD(sampleMethod:(NSString *)stringArgument numberParameter:(nonnull NSNumber *)numberArgument callback:(RCTResponseSenderBlock)callback)
+//{
+//    // TODO: Implement some actually useful functionality
+//    callback(@[[NSString stringWithFormat: @"numberArgument: %@ stringArgument: %@", numberArgument, stringArgument]]);
+//}
 
 
 @end
