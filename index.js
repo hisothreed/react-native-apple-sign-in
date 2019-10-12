@@ -12,7 +12,7 @@ export const SignInWithAppleButton = (buttonStyle, callBack) => {
     return <RNSignInWithAppleButton style={buttonStyle} onPress={async () => {
       await AppleSignIn.requestAsync({
         scopes: [AppleSignIn.Scope.FULL_NAME, AppleSignIn.Scope.EMAIL],
-        requestedOperation: AppleSignIn.Operations.LOGIN
+        requestedOperation: AppleSignIn.Operation.LOGIN
       }).then((response) => {
         callBack(response) //Display response
       }, (error) => {
